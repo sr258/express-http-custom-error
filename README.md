@@ -2,12 +2,10 @@
 
 Customizable HTTP Errors, compatible with es6 "throw" syntax, including a custom error handler for express APIs.
 
-**This package is not being maintained and may have errors.**
-
 ## Installation
 
 ```bash
-npm i express-http-custom-error
+npm i @sr258/express-http-custom-error
 ```
 
 ## Usage
@@ -15,7 +13,7 @@ npm i express-http-custom-error
 Throwing an error:
 
 ```javascript
-const { BadRequest } = require('express-http-custom-error');
+const { BadRequest } = require('sr258@express-http-custom-error');
 
 router.post('/signin', async (req, res, next) => {
     try {
@@ -31,7 +29,7 @@ router.post('/signin', async (req, res, next) => {
 Using the error handler:
 
 ```javascript
-const { errorHandler } = require('express-http-custom-error');
+const { errorHandler } = require('@sr258/express-http-custom-error');
 const app = express();
 
 ...

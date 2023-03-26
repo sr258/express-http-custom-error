@@ -39,7 +39,7 @@ const {
 	LoopDetected,
 	NotExtended,
 	NetworkAuthenticationRequired,
-} = require('../index');
+} = require('../dist/index.js');
 
 describe('HTTP Errors Unit Tests', () => {
 	it('Error should be instance of HTTPError', () => {
